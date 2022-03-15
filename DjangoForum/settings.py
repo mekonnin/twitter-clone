@@ -84,7 +84,7 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "d7bciitukgpbd2",
+        "NAME": "d1dudbtf26bi3b",
         "USER": "yvxoaqhpslwwzl",
         "HOST": "ec2-44-195-191-252.compute-1.amazonaws.com",
         "PORT": 5432,
