@@ -81,8 +81,14 @@ WSGI_APPLICATION = 'DjangoForum.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "d7bciitukgpbd2",
+        "USER": "yvxoaqhpslwwzl",
+        "HOST": "ec2-44-195-191-252.compute-1.amazonaws.com",
+        "PORT": 5432,
+        "PASSWORD": "c4d3f7bbd35b27017509fb2d8d43b38b37e381e7c2070db03f0587ca7bccd92a",
     }
 }
 
@@ -143,3 +149,5 @@ cloudinary.config(
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_URL = "/static/"
